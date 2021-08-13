@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90vw;
+}
+
+.white,
+.body-white {
+  background-color: white;
+}
+
+.red,
+.body-red {
+  background-color: red;
+}
+
+.orange,
+.body-orange {
+  background-color: orange;
+}
+
+.purple,
+.body-purple {
+  background-color: purple;
+}
+
+.green,
+.body-green {
+  background-color: green;
+}
+
+/*menu css*/
+.nav-container {
+  width: 750px;
+  height: 450px;
+}
+.nav-container ul {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  position: fixed;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-container ul li {
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.nav-container ul li:first-child {
+  border-top: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nav-container ul li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.nav-container ul li a {
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  padding-top: 18px;
+  color: black;
+  font-size: 20px;
+}
+
+/*hamburger css*/
+.hamburger-menu {
+  background-color: transparent;
+  width: 300px;
+}
+.hamburger-menu img {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 120px;
+  z-index: 1000;
+}
+
+/* tekst die op body verschijnt*/
+.colorText {
+  color: black;
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* transition left ipv top en opacity ivm hover mouse*/
+.menuClose {
+  position: absolute;
+  left: -300px;
+  transition: left 300ms ease-in-out;
+}
+
+.menuOpen {
+  position: absolute;
+  left: 25px;
+  transition: left 300ms ease-in-out;
+}/*# sourceMappingURL=style.css.map */
